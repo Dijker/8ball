@@ -2,6 +2,7 @@
 	"id": "com.8ball",
     "version": "0.0.1",
     "compatibility": "0.x",
+    	"category": "internet",
 	"name": {
     "en": "Magic 8 ball",
     "nl": "Magische 8 bal"
