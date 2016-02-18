@@ -1,0 +1,76 @@
+{
+	"id": "com.8ball",
+    "version": "0.0.1",
+    "compatibility": "0.x",
+	"name": {
+    "en": "Magic 8 ball",
+    "nl": "Magische 8 bal"
+  },
+    "author": {
+        "name": "Mathijs Frencken",
+        "email": "mathijsfrencken@live.nl"
+    },
+	"images": {
+		"large": "./assets/images/large.jpg",
+		"small": "./assets/images/small.png"
+	},
+	"description": {
+		"en": "Ask the magic 8 ball Homey anything."
+	},
+	
+	
+	"permissions": [
+    "homey:manager:speech-output",
+	"homey:manager:speech-input",
+    "homey:manager:ledring",
+	"homey:app:com.athom.hello",
+    "homey:manager:media"
+    
+],
+  "flow": {
+    "triggers": [],
+    "conditions": []
+  },
+  "speech": [
+		{
+			"id": "magic",
+			"importance": 0.4,
+			"triggers": {
+				"en": [ "magic" ],
+				"nl": [ "magische" ]
+			}
+		},
+		{
+			"id": "eight",
+			"importance": 0.3,
+			"triggers": {
+				"en": [ "eight" ],
+				"nl": [ "acht" ]
+			}
+		},
+		{
+			"id": "magic eight ball",
+			"importance": 1,
+			"triggers": {
+				"en": [ "magic eight ball" ],
+				"nl": [ "magische acht bal" ]
+			}
+		},
+		{
+			"id": "joint",
+			"importance": 0.7,
+			"triggers": {
+				"en": [ "joint", "joints" ],
+				"nl": [ "magische acht bal" ]
+			}
+		},
+		{
+			"id": "ball",
+			"importance": 0.3,
+			"triggers": {
+				"en": [ "ball" ],
+				"nl": [ "bal" ]
+			}
+		}
+	]
+}
